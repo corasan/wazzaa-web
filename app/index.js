@@ -1,29 +1,23 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import { Router, Route, IndexRoute, browserHistory, Link } from 'react-router';
 
 class App extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            f_name: ''
-        }
-    }
-    handleChange = (e) => {
-        this.setState({f_name: e.target.value});
-    }
     render() {
         return (
             <div>
-                <h1>Hello!</h1>
+                <Link to="signup">Signup</Link>
+                {this.props.children}
             </div>
         )
     }
 }
 
+import Signup from './pages/Signup';
 const routes = (
     <Router>
         <Route path="/" component={App}/>
+        <Route path="/signup" component={Signup}/>
     </Router>
 )
 

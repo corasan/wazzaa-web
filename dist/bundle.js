@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "980c4a1e0a82bd37aed6"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "a04143d2293f7dc6feda"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -584,7 +584,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(1);
-	module.exports = __webpack_require__(244);
+	module.exports = __webpack_require__(245);
 
 
 /***/ },
@@ -607,6 +607,10 @@
 
 	var _reactRouter = __webpack_require__(180);
 
+	var _Signup = __webpack_require__(241);
+
+	var _Signup2 = _interopRequireDefault(_Signup);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -618,19 +622,10 @@
 	var App = function (_Component) {
 	    _inherits(App, _Component);
 
-	    function App(props) {
+	    function App() {
 	        _classCallCheck(this, App);
 
-	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(App).call(this, props));
-
-	        _this.handleChange = function (e) {
-	            _this.setState({ f_name: e.target.value });
-	        };
-
-	        _this.state = {
-	            f_name: ''
-	        };
-	        return _this;
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(App).apply(this, arguments));
 	    }
 
 	    _createClass(App, [{
@@ -640,10 +635,11 @@
 	                'div',
 	                null,
 	                _react2.default.createElement(
-	                    'h1',
-	                    null,
-	                    'Hello!'
-	                )
+	                    _reactRouter.Link,
+	                    { to: 'signup' },
+	                    'Signup'
+	                ),
+	                this.props.children
 	            );
 	        }
 	    }]);
@@ -654,7 +650,8 @@
 	var routes = _react2.default.createElement(
 	    _reactRouter.Router,
 	    null,
-	    _react2.default.createElement(_reactRouter.Route, { path: '/', component: App })
+	    _react2.default.createElement(_reactRouter.Route, { path: '/', component: App }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/signup', component: _Signup2.default })
 	);
 
 	_reactDom2.default.render(_react2.default.createElement(
@@ -663,7 +660,7 @@
 	    routes
 	), document.getElementById('app'));
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(241); if (makeExportsHot(module, __webpack_require__(77))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(242); if (makeExportsHot(module, __webpack_require__(77))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)(module)))
 
 /***/ },
@@ -26884,10 +26881,96 @@
 /* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(3), RootInstanceProvider = __webpack_require__(11), ReactMount = __webpack_require__(13), React = __webpack_require__(77); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
 	'use strict';
 
-	var isReactClassish = __webpack_require__(242),
-	    isReactElementish = __webpack_require__(243);
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(77);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Signup = function (_Component) {
+	    _inherits(Signup, _Component);
+
+	    function Signup(props) {
+	        _classCallCheck(this, Signup);
+
+	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Signup).call(this, props));
+
+	        _this.handleFname = function (e) {
+	            _this.setState({ fname: e.target.value });
+	        };
+
+	        _this.handleLname = function (e) {
+	            _this.setState({ lname: e.target.value });
+	        };
+
+	        _this.handleEmail = function (e) {
+	            _this.setState({ email: e.target.value });
+	        };
+
+	        _this.handlePassword = function (e) {
+	            _this.setState({ password: e.target.value });
+	        };
+
+	        _this.state = {
+	            fname: '',
+	            lname: '',
+	            email: '',
+	            password: ''
+	        };
+	        return _this;
+	    }
+
+	    _createClass(Signup, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'form',
+	                { action: '/signup', method: 'POST' },
+	                _react2.default.createElement('input', { type: 'text', name: 'fname', value: this.state.fname, onChange: this.handleFname }),
+	                _react2.default.createElement('input', { type: 'text', name: 'lname', value: this.state.lname, onChange: this.handleLname }),
+	                _react2.default.createElement('input', { type: 'email', name: 'email', value: this.state.email, onChange: this.handleEmail }),
+	                _react2.default.createElement('input', { type: 'password', name: 'password', value: this.state.password, onChange: this.handlePassword }),
+	                _react2.default.createElement(
+	                    'button',
+	                    { type: 'submit' },
+	                    'Signup'
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Signup;
+	}(_react.Component);
+
+	exports.default = Signup;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(242); if (makeExportsHot(module, __webpack_require__(77))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "Signup.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)(module)))
+
+/***/ },
+/* 242 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var isReactClassish = __webpack_require__(243),
+	    isReactElementish = __webpack_require__(244);
 
 	function makeExportsHot(m, React) {
 	  if (isReactElementish(m.exports, React)) {
@@ -26941,7 +27024,7 @@
 
 
 /***/ },
-/* 242 */
+/* 243 */
 /***/ function(module, exports) {
 
 	function hasRender(Class) {
@@ -26991,10 +27074,10 @@
 	module.exports = isReactClassish;
 
 /***/ },
-/* 243 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isReactClassish = __webpack_require__(242);
+	var isReactClassish = __webpack_require__(243);
 
 	function isReactElementish(obj, React) {
 	  if (!obj) {
@@ -27008,23 +27091,23 @@
 	module.exports = isReactElementish;
 
 /***/ },
-/* 244 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(245);
+	var content = __webpack_require__(246);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(247)(content, {});
+	var update = __webpack_require__(248)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(true) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept(245, function() {
-				var newContent = __webpack_require__(245);
+			module.hot.accept(246, function() {
+				var newContent = __webpack_require__(246);
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -27034,10 +27117,10 @@
 	}
 
 /***/ },
-/* 245 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(246)();
+	exports = module.exports = __webpack_require__(247)();
 	// imports
 
 
@@ -27048,7 +27131,7 @@
 
 
 /***/ },
-/* 246 */
+/* 247 */
 /***/ function(module, exports) {
 
 	/*
@@ -27104,7 +27187,7 @@
 
 
 /***/ },
-/* 247 */
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
