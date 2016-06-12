@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 class App extends Component {
     constructor(props) {
@@ -14,13 +15,16 @@ class App extends Component {
     render() {
         return (
             <div>
-                <form method="POST" action="/">
-                    <input type="text" name="fname" placeholder="First name" value={this.state.f_name} onChange={this.handleChange}></input>
-                    <button type="submit">Submit</button>
-                </form>
+                <h1>Hello!</h1>
             </div>
         )
     }
 }
 
-ReactDOM.render(<App/>, document.getElementById('app'));
+const routes = (
+    <Router>
+        <Route path="/" component={App}/>
+    </Router>
+)
+
+ReactDOM.render(<Router history={browserHistory}>{routes}</Router>, document.getElementById('app'));
