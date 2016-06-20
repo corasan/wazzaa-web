@@ -6,7 +6,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <Link to="signup">Signup</Link>
+                <Link to="signup"><h2>Signup!</h2></Link>
                 {this.props.children}
             </div>
         )
@@ -14,10 +14,12 @@ class App extends Component {
 }
 
 import Signup from './pages/Signup';
+import Login from './pages/Login';
 const routes = (
     <Router>
         <Route path="/" component={App}/>
         <Route path="/signup" component={Signup}/>
+        <Route path="/login" component={Login}/>
     </Router>
 )
 

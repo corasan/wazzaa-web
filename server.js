@@ -20,6 +20,12 @@ app.post('/signup', function(req, res) {
     res.redirect('/');
 });
 
+app.post('/login', function(req, res) {
+    console.log(req.body.email);
+    require('./server/auth')(req.body.email, req.body.password);
+    res.redirect('/login');
+})
+
 
 const port = process.env.PORT || 3001;
 app.listen(port, function(error) {
