@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "5c417a8eba8b03b474ee"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "f32b0b4cda7d51d629d2"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -27238,11 +27238,6 @@
 	            return _react2.default.createElement(
 	                'div',
 	                null,
-	                _react2.default.createElement(
-	                    'h1',
-	                    null,
-	                    'Login'
-	                ),
 	                _react2.default.createElement(_loginForm2.default, null)
 	            );
 	        }
@@ -27310,15 +27305,38 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                null,
+	                { id: 'login-box' },
+	                _react2.default.createElement(
+	                    'p',
+	                    { id: 'panel-title' },
+	                    'Login'
+	                ),
 	                _react2.default.createElement(
 	                    'form',
 	                    { method: 'POST', action: '/login' },
-	                    _react2.default.createElement('input', { type: 'email', name: 'email', value: this.state.email, onChange: this.handleEmail }),
-	                    _react2.default.createElement('input', { type: 'password', name: 'password', value: this.state.password, onChange: this.handlePassword }),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { id: 'login-email' },
+	                        _react2.default.createElement(
+	                            'label',
+	                            null,
+	                            'Email'
+	                        ),
+	                        _react2.default.createElement('input', { type: 'email', id: 'login-email-input', name: 'email', value: this.state.email, onChange: this.handleEmail })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { id: 'login-password' },
+	                        _react2.default.createElement(
+	                            'label',
+	                            null,
+	                            'Password'
+	                        ),
+	                        _react2.default.createElement('input', { type: 'password', id: 'login-pass-input', name: 'password', value: this.state.password, onChange: this.handlePassword })
+	                    ),
 	                    _react2.default.createElement(
 	                        'button',
-	                        { type: 'submit' },
+	                        { id: 'login-btn', type: 'submit' },
 	                        'Login'
 	                    )
 	                )
@@ -27369,7 +27387,7 @@
 
 
 	// module
-	exports.push([module.id, "#signup-box {\n    float: none;\n    height: 554px;\n    margin-left: auto;\n    margin-top: 132px;\n    clear: none;\n    width: 400px;\n    margin-right: auto;\n    border: 1px solid rgb(136, 136, 136);\n}\n#first-name {\n    float: left;\n    height: 86px;\n    display: block;\n    text-align: left;\n    margin-left: 12.465132%;\n    margin-top: 51px;\n    clear: none;\n    width: 35.006974%;\n    border-top-left-radius: 4px;\n    border-top-right-radius: 4px;\n    border-bottom-right-radius: 4px;\n    border-bottom-left-radius: 4px;\n    padding-top: 0px;\n    padding-bottom: 0px;\n}\n#last-name {\n    float: left;\n    height: 86px;\n    display: block;\n    text-align: left;\n    margin-left: 5.361986%;\n    margin-top: 51px;\n    clear: none;\n    width: 35.006973%;\n    border-top-left-radius: 4px;\n    border-top-right-radius: 4px;\n    border-bottom-right-radius: 4px;\n    border-bottom-left-radius: 4px;\n    padding-top: 0px;\n    padding-bottom: 0px;\n    margin-right: 0%;\n}\n#email {\n    float: left;\n    height: 86px;\n    display: block;\n    text-align: left;\n    margin-left: 12.46401%;\n    margin-top: 28px;\n    clear: both;\n    width: 75.230545%;\n    border-top-left-radius: 4px;\n    border-top-right-radius: 4px;\n    border-bottom-right-radius: 4px;\n    border-bottom-left-radius: 4px;\n    padding-top: 0px;\n    padding-bottom: 0px;\n    margin-right: 0%;\n}\n#password {\n    float: left;\n    height: 86px;\n    display: block;\n    text-align: left;\n    margin-left: 12.58502%;\n    margin-top: 33px;\n    clear: both;\n    width: 75.230545%;\n    border-top-left-radius: 4px;\n    border-top-right-radius: 4px;\n    border-bottom-right-radius: 4px;\n    border-bottom-left-radius: 4px;\n    padding-top: 0px;\n    padding-bottom: 0px;\n    margin-right: 0%;\n}\n\n/* SIGNUP INPUT!! */\n#input-fname {\n    float: none;\n    height: auto;\n    padding: 4px 0px 4px 15px;\n    font-size: 1em;\n    display: block;\n    width: 100%;\n    border-top-left-radius: 4px;\n    border-top-right-radius: 4px;\n    border-bottom-right-radius: 4px;\n    border-bottom-left-radius: 4px;\n    border-style: solid;\n    border-width: 1px;\n}\n\n#input-lname {\n    float: none;\n    height: auto;\n    padding: 4px 0px 4px 15px;\n    font-size: 1em;\n    display: block;\n    width: 100%;\n    border-top-left-radius: 4px;\n    border-top-right-radius: 4px;\n    border-bottom-right-radius: 4px;\n    border-bottom-left-radius: 4px;\n    border-style: solid;\n    border-width: 1px;\n}\n\n#input-email {\n    float: none;\n    height: auto;\n    padding: 4px 0px 4px 15px;\n    font-size: 1em;\n    display: block;\n    width: 100%;\n    border-top-left-radius: 4px;\n    border-top-right-radius: 4px;\n    border-bottom-right-radius: 4px;\n    border-bottom-left-radius: 4px;\n    border-style: solid;\n    border-width: 1px;\n}\n\n#input-passw {\n    float: none;\n    height: auto;\n    padding: 4px 0px 4px 15px;\n    font-size: 1em;\n    display: block;\n    width: 100%;\n    border-top-left-radius: 4px;\n    border-top-right-radius: 4px;\n    border-bottom-right-radius: 4px;\n    border-bottom-left-radius: 4px;\n    border-style: solid;\n    border-width: 1px;\n}\n\n#signup-btn {\n    float: left;\n    height: 47px;\n    font-size: 1em;\n    margin-left: 32.70603%;\n    margin-top: 80px;\n    clear: both;\n    width: 34.583779%;\n    border-style: solid;\n    border-color: rgb(127, 127, 127);\n    -webkit-box-shadow: none;\n    box-shadow: none;\n    border-top-left-radius: 5px;\n    border-top-right-radius: 5px;\n    border-bottom-right-radius: 5px;\n    border-bottom-left-radius: 5px;\n}\n", ""]);
+	exports.push([module.id, "#email,#password{width:75.230545%}#email,#last-name,#password{height:86px;padding-top:0;padding-bottom:0;margin-right:0}#email,#password,#signup-btn{float:left;clear:both}#login-box,#signup-box{margin-top:120px;width:450px}#login-email,#login-password{height:79px;display:block;text-align:left;margin-left:auto;width:65.05%;float:none}#login-box,#login-btn,#login-email,#login-password,#panel-title,#signup-box{clear:none;margin-right:auto}#panel-title{float:none;font-size:26px;width:31.5859%;height:auto;text-align:center;font-weight:400;line-height:1em;margin-left:auto;margin-top:37px;min-height:0;letter-spacing:normal}input{border-color:#ecf0f1;border-width:2px!important;font-size:17px!important;padding:4px 0 4px 10px}#login-btn,#signup-btn{font-size:18px;background-color:#1abc9c;color:#fff}#signup-box{float:center;height:554px;margin-left:auto;border:3px solid #ecf0f1;border-radius:0}#first-name{float:left;height:86px;display:block;text-align:left;margin-left:12.465132%;margin-top:51px;clear:none;width:35.006974%;padding-top:0;padding-bottom:0}#input-fname,#input-lname{float:none;height:auto;display:block;width:100%;border-style:solid}#last-name{float:left;display:block;text-align:left;margin-left:5.361986%;margin-top:51px;clear:none;width:35.006973%}#email{display:block;text-align:left;margin-left:12.46401%;margin-top:28px}#input-email,#input-passw,#login-email-input,#login-pass-input{float:center;height:auto;display:block;width:100%;border-style:solid}#password{display:block;text-align:left;margin-left:12.58502%;margin-top:33px;border-radius:5px}#signup-btn{height:47px;margin-left:32.70603%;margin-top:80px;width:34.583779%;border:0 solid;-webkit-box-shadow:none;box-shadow:none;border-radius:0}#login-box{float:none;height:561px;margin-left:auto;border:3px solid #e9e9e9}#login-email{margin-top:70px}#login-password{margin-top:39.5px}#login-btn{float:none;height:45px;margin-left:140px;margin-top:79.5px;width:30.337919%;-webkit-box-shadow:none;box-shadow:none;letter-spacing:1px;border-style:none;border-radius:0}", ""]);
 
 	// exports
 

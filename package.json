@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack && node server.js",
-    "dev": "webpack && node hotServer.js"
+    "dev": "webpack && node hotServer.js",
+    "bundle": "gulp && webpack"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,8 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "^6.5.0",
     "css-loader": "^0.23.1",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.10",
     "multer": "^1.1.0",
     "react-hot-loader": "^1.3.0",
     "react-router": "^2.0.0",

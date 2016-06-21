@@ -8,11 +8,10 @@ module.exports = function(email, pass) {
             'username': email,
             'password': pass
         },
-        headers: {'WWW-Authenticate': 'Basic realm="My Server"'},
+        headers: {'WWW-Authenticate': 'Basic realm="Wazzaa"'},
         json: true
     }
     request(options).then(function(user) {
         console.log(user);
-    })
-    // request.get('http://api.wazzaa.com/v1/auth/wazzaa').auth(email, pass, false);
+    });
 }

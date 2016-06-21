@@ -6,7 +6,7 @@ module.exports = {
         'webpack-dev-server/client?http://localhost:4000',
         'webpack/hot/only-dev-server',
         './app/index.js',
-        './dist/styles.css'
+        './public/styles.css'
     ],
     output: {
         path: path.join(__dirname, 'dist'),

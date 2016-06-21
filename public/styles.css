@@ -1,0 +1,205 @@
+/* GENERAL STYLES!!! */
+#panel-title {
+    float: none;
+    font-size: 26px;
+    width: 31.5859%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: auto;
+    margin-top: 37px;
+    clear: none;
+    min-height: 0px;
+    letter-spacing: normal;
+    margin-right: auto;
+}
+input {
+    border-color: #ecf0f1;
+    border-width: 2px !important;
+    font-size: 17px !important;
+    padding: 4px 0px 4px 10px;
+}
+
+/* SIGN UP PAGE STYLES!!! */
+#signup-box {
+    float: center;
+    height: 554px;
+    margin-left: auto;
+    margin-top: 120px;
+    clear: none;
+    width: 450px;
+    margin-right: auto;
+    border: 3px solid;
+    border-radius: 0px;
+    border-color: #ecf0f1;
+}
+#first-name {
+    float: left;
+    height: 86px;
+    display: block;
+    text-align: left;
+    margin-left: 12.465132%;
+    margin-top: 51px;
+    clear: none;
+    width: 35.006974%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+#input-fname {
+    float: none;
+    height: auto;
+    display: block;
+    width: 100%;
+    border-style: solid;
+}
+#last-name {
+    float: left;
+    height: 86px;
+    display: block;
+    text-align: left;
+    margin-left: 5.361986%;
+    margin-top: 51px;
+    clear: none;
+    width: 35.006973%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-right: 0%;
+}
+#input-lname {
+    float: none;
+    height: auto;
+    display: block;
+    width: 100%;
+    border-style: solid;
+}
+#email {
+    float: left;
+    height: 86px;
+    display: block;
+    text-align: left;
+    margin-left: 12.46401%;
+    margin-top: 28px;
+    clear: both;
+    width: 75.230545%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-right: 0%;
+}
+#input-email {
+    float: center;
+    height: auto;
+    display: block;
+    width: 100%;
+    border-style: solid;
+}
+#password {
+    float: left;
+    height: 86px;
+    display: block;
+    text-align: left;
+    margin-left: 12.58502%;
+    margin-top: 33px;
+    clear: both;
+    width: 75.230545%;
+    border-radius: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-right: 0%;
+}
+#input-passw {
+    float: center;
+    height: auto;
+    display: block;
+    width: 100%;
+    border-style: solid;
+}
+
+#signup-btn {
+    float: left;
+    height: 47px;
+    font-size: 18px;
+    margin-left: 32.70603%;
+    margin-top: 80px;
+    clear: both;
+    width: 34.583779%;
+    border: 0px solid;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0px;
+    background-color: #1abc9c;
+    color: white;
+}
+
+/* LOGIN PAGE STYLES!!! */
+#login-box {
+    float: none;
+    height: 561px;
+    margin-left: auto;
+    margin-top: 120px;
+    clear: none;
+    width: 450px;
+    margin-right: auto;
+    border: 3px solid rgb(233, 233, 233);
+}
+
+#login-email {
+    float: none;
+    height: 79px;
+    display: block;
+    text-align: left;
+    margin-left: auto;
+    margin-top: 70px;
+    clear: none;
+    width: 65.05%;
+    margin-right: auto;
+}
+
+#login-email-input {
+    float: center;
+    height: auto;
+    display: block;
+    width: 100%;
+    border-style: solid;
+}
+
+#login-password {
+    float: none;
+    height: 79px;
+    display: block;
+    text-align: left;
+    margin-left: auto;
+    margin-top: 39.5px;
+    clear: none;
+    width: 65.05%;
+    margin-right: auto;
+}
+
+#login-pass-input {
+    float: center;
+    height: auto;
+    display: block;
+    width: 100%;
+    border-style: solid;
+}
+
+#login-btn {
+    float: none;
+    height: 45px;
+    font-size: 18px;
+    margin-left: 140px;
+    margin-top: 79.5px;
+    clear: none;
+    width: 30.337919%;
+    margin-right: auto;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #1abc9c;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    border-style: none;
+}
