@@ -29,11 +29,11 @@ export default class SignupForm extends Component {
                 <form action="/signup" method="POST">
                     <div id="first-name">
                         <label>First name</label>
-                        <input id="input-fname" type="text" name="fname" value={this.state.fname} onChange={this.handleFname}/>
+                        <input id="input-fname" type="text" name="first_name" value={this.state.fname} onChange={this.handleFname}/>
                     </div>
                     <div id="last-name">
                         <label>Last name</label>
-                        <input id="input-lname" type="text" name="lname" value={this.state.lname} onChange={this.handleLname}/>
+                        <input id="input-lname" type="text" name="last_name" value={this.state.lname} onChange={this.handleLname}/>
                     </div>
                     <div id="email">
                         <label>Email</label>

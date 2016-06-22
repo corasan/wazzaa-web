@@ -29,7 +29,8 @@
     "react-dom": "^15.1.0",
     "react-router": "^2.4.1",
     "request": "^2.72.0",
-    "request-promise": "^3.0.0"
+    "request-promise": "^3.0.0",
+    "string_transformer": "^1.0.1"
   },
   "devDependencies": {
     "babel-loader": "^6.2.4",
